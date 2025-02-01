@@ -89,7 +89,17 @@ body {
 
 .button-container {
     width: 300px;
-    justify-content: center;
+  justify-content: center;
+}
+/*mis modificaciones*/
+.button-container button:nth-child(2){
+    width: inherit;
+    margin: 5px 0;
+    color:var(--color-white);
+    background-color: var(--color-primary);
+}
+.hidden{
+    display: none;
 }
 
 /* Estilos de entrada de texto */
@@ -128,11 +138,18 @@ button {
 /* Listas */
 ul {
     list-style-type: none;
-    color: var(--color-text);
+/* mis modificaciones */
+    color: var(--color-primary);
     font-family: "Inter", sans-serif;
     font-size: 18px;
-    margin: 20px 0;
+    font-weight: bolder;
+    margin: 20px 0px;
 }
+ul li{
+    display: inline;
+    margin: 0 10px;
+}
+
 
 .result-list {
     margin-top: 15px;
